@@ -1420,13 +1420,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Initialize Firebase and chat functionality
 const firebaseConfig = {
-  apiKey: "AIzaSyAl6fkchBhUYO1iuC41COTaLO2RrMh8Lyk",
+  apiKey: "AIzaSyBFxa9B0YtWqS_zBFaSyaFIyiCOe4TsRQM",
   authDomain: "animerealm-chat.firebaseapp.com",
-  databaseURL: "https://animerealm-chat-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "animerealm-chat",
-  storageBucket: "animerealm-chat.firebasestorage.app",
-  messagingSenderId: "58036383508",
-  appId: "1:58036383508:web:f6e78653ab594158369c01"
+  databaseURL: "https://animerealm-chat-default-rtdb.firebaseio.com",
+  storageBucket: "animerealm-chat.appspot.com",
+  messagingSenderId: "773267181222",
+  appId: "1:773267181222:web:4f3e5e6c6272671e12b321"
 };
 
 // Initialize Firebase
