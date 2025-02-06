@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnimeRealm - Watch Anime Online</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <div class="logo">
+        <i class="fas fa-dragon"></i>
+        <h1>AnimeRealm</h1>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search anime...">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#home" class="active">Home</a>
+          <a href="#movies">Movies</a>
+          <a href="#tv-series">TV Series</a>
+          <a href="#popular">Popular</a>
+          <a href="#latest">Latest</a>
+        </div>
+        <div class="dropdown">
+          <button class="sign-in-btn">
+            <i class="fas fa-user"></i>
+            Sign In
+          </button>
+          <div class="dropdown-content">
+            <a href="#" class="profile-link"><i class="fas fa-user"></i> Edit Profile</a>
+            <a href="#"><i class="fas fa-heart"></i> Watchlist</a>
+            <a href="#"><i class="fas fa-history"></i> History</a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="sign-out"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="hero">
+      <div class="featured-anime" id="featured">
+        <!-- Featured anime slides will be populated by JavaScript -->
+      </div>
+    </section>
+    <section class="latest">
+      <h2>Latest Episodes</h2>
+      <div class="anime-grid" id="latest">
+        <!-- Latest episodes will be populated by JavaScript -->
+      </div>
+    </section>
+    <section class="trending">
+      <h2>Trending Now</h2>
+      <div class="anime-grid" id="trending">
+        <!-- Trending anime cards will be populated by JavaScript -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>AnimeRealm</h3>
+        <p>Your gateway to the world of anime</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">TV Series</a>
+        <a href="#">Popular</a>
+      </div>
+      <div class="footer-section">
+        <h3>Connect</h3>
+        <div class="social-links">
+          <a href="https://discord.gg/be774snHsP"><i class="fab fa-discord"></i></a>
+          <!-- <a href="#"><i class="fab fa-yot"></i></a> -->
+          <a href="#"><i class="fab fa-reddit"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 AnimeRealm. All rights reserved.</p>
+    </div>
+  </footer>
+  <template id="settings-modal-template">
+    <div class="auth-modal settings-modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="auth-header">
+          <h2>Profile Settings</h2>
+        </div>
+        <form class="settings-form">
+          <div class="avatar-section">
+            <img src="" alt="Profile" class="current-avatar">
+            <div class="avatar-controls">
+              <button type="button" class="upload-avatar-btn">Upload Photo</button>
+              <input type="file" id="avatar-upload" accept="image/*">
+              <button type="button" class="generate-avatar-btn">Generate Random</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="settings-username">Display Name (optional)</label>
+            <input type="text" id="settings-username" placeholder="Enter display name">
+          </div>
+          <div class="form-group">
+            <label for="settings-gender">Gender (optional)</label>
+            <select id="settings-gender" class="gender-select">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="neutral">Prefer not to say</option>
+            </select>
+          </div>
+          <button type="submit" class="auth-submit-btn">Save Changes</button>
+        </form>
+      </div>
+    </div>
+  </template>
+  <div id="chat-container" class="chat-container collapsed">
+    <div class="chat-header">
+      <h3><i class="fas fa-comments"></i> Chat</h3>
+      <div class="chat-controls">
+        <button class="minimize-chat"><i class="fas fa-minus"></i></button>
+        <button class="close-chat"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+    <div class="online-users">
+      <div class="online-users-list">
+        <!-- Online users will be populated here -->
+      </div>
+    </div>
+    <div class="chat-messages">
+      <!-- Chat messages will be populated here -->
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type a message...">
+      <button class="send-message"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+  <button id="chat-toggle" class="chat-toggle">
+    <i class="fas fa-comments"></i>
+    <span class="chat-label">Chat</span>
+  </button>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
