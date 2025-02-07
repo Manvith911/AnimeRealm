@@ -5,25 +5,45 @@ const animeData = {
       title: "Demon Slayer: Kimetsu no Yaiba",
       description: "A young man fights demons to save his sister and avenge his family.",
       image: "https://image.tmdb.org/t/p/w1280/xUfRZu2mi8jH6SzQEJGP6tjBuYj.jpg",
-      rating: "9.5"
+      rating: "9.5",
+      episodes: [
+        { title: "Episode 1", videoUrl: "https://example.com/demon-slayer-ep1.mp4" },
+        { title: "Episode 2", videoUrl: "https://example.com/demon-slayer-ep2.mp4" },
+        { title: "Episode 3", videoUrl: "https://example.com/demon-slayer-ep3.mp4" }
+      ]
     },
     {
       title: "Attack on Titan",
       description: "Humanity fights for survival against man-eating giants.",
       image: "https://image.tmdb.org/t/p/w1280/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg",
-      rating: "9.8"
+      rating: "9.8",
+      episodes: [
+        { title: "Episode 1", videoUrl: "https://example.com/aot-ep1.mp4" },
+        { title: "Episode 2", videoUrl: "https://example.com/aot-ep2.mp4" },
+        { title: "Episode 3", videoUrl: "https://example.com/aot-ep3.mp4" }
+      ]
     },
     {
       title: "Jujutsu Kaisen",
       description: "A high school student joins a secret organization of sorcerers.",
       image: "https://image.tmdb.org/t/p/original/hFWP5HkbVEe40hrXgtCeQxoccHE.jpg",
-      rating: "9.3"
+      rating: "9.3",
+      episodes: [
+        { title: "Episode 1", videoUrl: "https://example.com/jujutsu-kaisen-ep1.mp4" },
+        { title: "Episode 2", videoUrl: "https://example.com/jujutsu-kaisen-ep2.mp4" },
+        { title: "Episode 3", videoUrl: "https://example.com/jujutsu-kaisen-ep3.mp4" }
+      ]
     },
     {
       title: "Blue Lock",
       description: "A egoist joins blue lock to become the world's no.1 striker",
       image: "https://pics.filmaffinity.com/blue_lock-470159847-large.jpg",
-      rating: "7.2"
+      rating: "7.2",
+      episodes: [
+        { title: "Episode 1", videoUrl: "https://example.com/blue-lock-ep1.mp4" },
+        { title: "Episode 2", videoUrl: "https://example.com/blue-lock-ep2.mp4" },
+        { title: "Episode 3", videoUrl: "https://example.com/blue-lock-ep3.mp4" }
+      ]
     } 
   ],
   trending: [
